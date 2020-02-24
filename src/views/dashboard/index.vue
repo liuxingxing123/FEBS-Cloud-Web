@@ -173,12 +173,12 @@ export default {
       chart: null,
       projects: [
         {
-          name: 'FEBS-Shiro',
+          name: 'IAMS -Shiro',
           des: 'Spring Boot 2.0.4 & Shiro1.4.0 权限管理系统。',
           avatar: 'F'
         },
         {
-          name: 'FEBS-Security',
+          name: 'IAMS -Security',
           des: 'Spring Boot 2.0.4 & Spring Security 5.0.7 权限管理系统。',
           avatar: 'F'
         },
@@ -188,18 +188,18 @@ export default {
           avatar: 'S'
         },
         {
-          name: 'FEBS-Shiro-Vue',
-          des: 'FEBS-Shiro前后端分离版本，前端架构采用Vue全家桶。',
+          name: 'IAMS -Shiro-Vue',
+          des: 'IAMS -Shiro前后端分离版本，前端架构采用Vue全家桶。',
           avatar: 'F'
         },
         {
-          name: 'FEBS-Cloud',
+          name: 'IAMS -Cloud',
           des: 'Spring Cloud Greenwich.SR1 & Spring Security OAuth2 微服务权限管理系统。',
           avatar: 'F'
         },
         {
-          name: 'FEBS-Cloud-Web',
-          des: 'FEBS-Cloud前端，使用 vue-element-admin 构建。',
+          name: 'IAMS -Cloud-Web',
+          des: 'IAMS -Cloud前端，使用 vue-element-admin 构建。',
           avatar: 'F'
         }
       ]

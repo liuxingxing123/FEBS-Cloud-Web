@@ -14,7 +14,7 @@ export default {
     deleteCache: 'DeleteCache'
   },
   login: {
-    title: 'FEBS System Login',
+    title: 'IAMS System Login',
     logIn: 'Login',
     username: 'Username',
     password: 'Password',
@@ -115,77 +115,6 @@ export default {
       field3: 'Field 3',
       createTime: 'Import Time'
     },
-    routeUser: {
-      tips: 'Gateway management user account list, permissions are divided into ordinary users (user) and administrative users (admin)',
-      username: 'UserName',
-      perm: 'Permissions',
-      createTime: 'CreateTime',
-      password: 'Password'
-    },
-    routeLog: {
-      tips: 'Gateway forwards request logs. These are requests that have not been intercepted by traffic limiting or blacklisting rules.',
-      ip: 'Request IP',
-      targetServer: 'Target Server',
-      requestMethod: 'Request Method',
-      requestTime: 'Request Time',
-      requestUri: 'Request URI',
-      targetUri: 'Target URI',
-      location: 'Location'
-    },
-    rateLimitRule: {
-      tips: 'Define gateway traffic restriction rules. Requests that do not meet the rules will be intercepted. The interception records can be viewed through the traffic restriction log.',
-      requestUri: 'Request URI',
-      requestMethod: 'Request Method',
-      limitFrom: 'Limit From',
-      allTheTime: 'all the time',
-      limitTo: 'Limit To',
-      count: 'Count',
-      period: 'Period (Seconds)',
-      createTime: 'CreateTime',
-      nst: 'Wildcards are not supported',
-      status: 'Status',
-      timeLimit: 'Time Limit',
-      timeRange: 'Time Range'
-    },
-    rateLimitLog: {
-      tips: 'Show request logs intercepted by traffic limiting rules',
-      requestUri: 'Request URI',
-      requestMethod: 'Request Method',
-      createTime: 'Request Time',
-      ip: 'Request IP',
-      location: 'Location'
-    },
-    blackList: {
-      tips: 'Define gateway request blacklist',
-      requestUri: 'Request URI',
-      requestMethod: 'Request Method',
-      createTime: 'CreateTime',
-      ip: 'Request IP',
-      location: 'Location',
-      allIp: 'unlimited IP',
-      limitFrom: 'Limit From',
-      allTheTime: 'all the time',
-      limitTo: 'Limit To',
-      status: 'Status',
-      st: 'Wildcard support',
-      timeLimit: 'Time Limit',
-      timeRange: 'Time Range'
-    },
-    blockLog: {
-      tips: 'Support wildcards to display request logs intercepted by blacklist rules. Requests that do not meet the rules will be intercepted. The interception records can be viewed through the blacklist logs.',
-      requestUri: 'Request URI',
-      requestMethod: 'Request Method',
-      createTime: 'Request Time',
-      ip: 'Request IP',
-      location: 'Location'
-    },
-    routeLogin: {
-      needLogin: 'The operation of the gateway management module requires authentication, ',
-      toLogin: ' Click to login',
-      tips: 'The function of this module needs to be enhanced in advance. For the method of opening, please refer to the document: ',
-      title: 'FEBS Gateway Certification',
-      login: 'Login'
-    },
     refresh: 'Refresh',
     operation: 'Operation',
     search: 'Search',
@@ -213,7 +142,7 @@ export default {
     sidebarLogo: 'Sidebar Logo'
   },
   system: {
-    title: 'FEBS System'
+    title: 'IAMS  System'
   },
   tips: {
     usernameShouldNotBeEmpty: 'Username can not be empty',
@@ -230,7 +159,7 @@ export default {
     confirmDelete: 'The selected data will be permanently deleted, continue?',
     confirmDeleteCache: 'Whether to clear the user permission cache immediately?',
     containCurrentUser: 'The operation has been canceled because it contains the currently logged in user',
-    neverLogin: 'Never logged in to the FEBS system',
+    neverLogin: 'Never logged in to the IAMS  system',
     nothing: 'Nothing',
     topId: 'A value of 0 indicates a top-level node',
     choose: 'Select: ',
@@ -238,7 +167,7 @@ export default {
     onlyChooseOne: 'Only one node can be selected as the parent node',
     noNodeSelected: 'Please select a node first',
     confirmDeleteNode: 'The selected node and its child nodes will be permanently deleted. Continue?',
-    iframeGrant: 'Userame: FEBS Password: 123456',
+    iframeGrant: 'Userame: IAMS  Password: 123456',
     notEqual: 'Inconsistent values entered twice',
     oldPasswordIncorrect: 'Old password incorrect',
     uploadSuccess: 'Upload Successfully',
@@ -250,9 +179,8 @@ export default {
     confirmRestPassword: 'Make sure to reset the selected user password?',
     resetPasswordSuccess: 'The selected user password reset has been reset to 1234qwer',
     getCodeImageFailed: 'Failed to get image verification code',
-    tooManyRequest: 'Getting the authentication code is too frequent. Please try again later',
-    clientOriginSecret: 'The original password of the client is: ',
-    sameRule: 'The same rule already exists'
+    tooManyRequest: 'Getting the authentication code is too frequent. Please try again in 1 minute',
+    clientOriginSecret: 'The original password of the client is: '
   },
   rules: {
     require: 'Can\'t be empty',
@@ -298,8 +226,6 @@ export default {
     createTime: 'Create Time',
     yes: 'Yes',
     no: 'No',
-    open: 'Open',
-    close: 'Close',
     sex: {
       male: 'Male',
       female: 'Female',

@@ -25,14 +25,14 @@
           <el-dropdown-item>
             <span style="display:block;" @click="setting">{{ $t('navbar.setting') }}</span>
           </el-dropdown-item>
-          <a target="_blank" href="https://github.com/wuyouzhuguli/FEBS-Cloud">
+          <!-- <a target="_blank" href="https://github.com/wuyouzhuguli/IAMS -Cloud">
             <el-dropdown-item>
               {{ $t('navbar.github') }}
             </el-dropdown-item>
           </a>
           <a target="_blank" href="https://www.kancloud.cn/mrbird/spring-cloud/1263679">
             <el-dropdown-item>{{ $t('navbar.docs') }}</el-dropdown-item>
-          </a>
+          </a> -->
           <el-dropdown-item divided>
             <span style="display:block;" @click="deleteCache">{{ $t('navbar.deleteCache') }}</span>
           </el-dropdown-item>

@@ -1,8 +1,7 @@
 import axios from 'axios'
-import { Message, MessageBox } from 'element-ui'
+import { Message } from 'element-ui'
 import { authorizationValue } from '@/settings'
 import store from '@/store/index'
-import router from '@/router'
 import { getToken, getRefreshToken, getExpireTime } from '@/utils/auth'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
@@ -91,21 +90,11 @@ service.interceptors.response.use((config) => {
         })
         break
       default:
-        if (errorMessage === 'refresh token无效') {
-          MessageBox.alert('登录已过期，请重新登录', '温馨提示', {
-            confirmButtonText: '确定',
-            showClose: false,
-            callback: action => {
-              router.push('/login')
-            }
-          })
-        } else {
-          Message({
-            message: errorMessage,
-            type: 'error',
-            duration: messageDuration
-          })
-        }
+        Message({
+          message: errorMessage,
+          type: 'error',
+          duration: messageDuration
+        })
         break
     }
   }
@@ -162,7 +151,6 @@ const request = {
     } else {
       _params = '?'
       for (const key in params) {
-        // eslint-disable-next-line no-prototype-builtins
         if (params.hasOwnProperty(key) && params[key] !== null) {
           _params += `${key}=${params[key]}&`
         }
@@ -177,7 +165,6 @@ const request = {
     } else {
       _params = '?'
       for (const key in params) {
-        // eslint-disable-next-line no-prototype-builtins
         if (params.hasOwnProperty(key) && params[key] !== null) {
           _params += `${key}=${params[key]}&`
         }

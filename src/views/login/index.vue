@@ -1,16 +1,16 @@
 <template>
   <div class="login-container">
     <div class="login-info">
-      <div class="title">FEBS Cloud</div>
+      <!-- <div class="title">IAMS  Cloud</div> -->
       <div class="sub-title">{{ $t('common.system') }}</div>
-      <div class="desc">1. {{ $t('common.desc.a') }}</div>
+      <!-- <div class="desc">1. {{ $t('common.desc.a') }}</div>
       <div class="desc">2. {{ $t('common.desc.b') }}</div>
       <div class="desc">3. {{ $t('common.desc.c') }}</div>
       <div class="desc">4. {{ $t('common.desc.d') }}</div>
       <div class="desc">5. {{ $t('common.desc.e') }}</div>
       <div class="desc">6. {{ $t('common.desc.f') }}</div>
       <div class="desc">7. {{ $t('common.desc.g') }}</div>
-      <div class="desc">8. {{ $t('common.desc.h') }}</div>
+      <div class="desc">8. {{ $t('common.desc.h') }}</div> -->
     </div>
     <el-form ref="loginForm" :model="loginForm" :rules="rules" class="login-form" autocomplete="off" label-position="left">
       <div class="title-container">
@@ -133,7 +133,7 @@
           </el-tab-pane>
         </el-tabs>
       </span>
-      <el-dropdown class="login-type" placement="top-end">
+      <!-- <el-dropdown class="login-type" placement="top-end">
         <span class="el-dropdown-link">
           <el-link type="primary">{{ $t('login.ortherLoginType') }}</el-link>
         </span>
@@ -141,10 +141,10 @@
           <el-dropdown-item :disabled="login.type === 'up'" @click.native="login.type = 'up'">{{ $t('login.type.up') }}</el-dropdown-item>
           <el-dropdown-item :disabled="login.type === 'social'" @click.native="login.type = 'social'">{{ $t('login.type.social') }}</el-dropdown-item>
         </el-dropdown-menu>
-      </el-dropdown>
+      </el-dropdown> -->
     </el-form>
     <span class="login-footer">
-      © 2019 <a target="_blank" href="https://mrbird.cc">MrBird</a> - FEBS
+      © 2020 <a target="_blank" href="">CCBFT</a> - 基础技术中心
     </span>
   </div>
 </template>
@@ -381,7 +381,7 @@ export default {
       })
     },
     loginSuccessCallback() {
-      this.$get('system/user/success').catch((e) => { console.log(e) })
+      this.$get('system/user/success/').catch((e) => { console.log(e) })
     }
   }
 }

@@ -5,7 +5,7 @@ export default {
   },
   navbar: {
     setting: '系统设置',
-    github: '项目地址',
+    // github: '项目地址',
     logOut: '退出登录',
     profile: '个人中心',
     docs: '项目文档',
@@ -14,7 +14,7 @@ export default {
     deleteCache: '清除缓存'
   },
   login: {
-    title: 'FEBS 系统登录',
+    title: '信息资产系统登录',
     logIn: '立即登录',
     username: '账号',
     password: '密码',
@@ -26,10 +26,10 @@ export default {
       social: '第三方账号登录'
     }
   },
-  documentation: {
+  /* --documentation: {
     documentation: '项目文档',
     github: '项目地址'
-  },
+  },-- */
   table: {
     user: {
       username: '用户名',
@@ -115,77 +115,6 @@ export default {
       field3: '字段3',
       createTime: '导入时间'
     },
-    routeUser: {
-      tips: '网关管理用户账号列表，权限分为普通用户（user）和管理用户（admin）',
-      username: '用户名',
-      perm: '权限',
-      createTime: '创建时间',
-      password: '密码'
-    },
-    routeLog: {
-      tips: '网关转发请求日志，这些为未被限流或黑名单规则拦截的请求',
-      ip: '请求IP',
-      targetServer: '目标服务',
-      requestMethod: '请求方法',
-      requestTime: '请求时间',
-      requestUri: '请求URI',
-      targetUri: '目标URI',
-      location: '请求地址'
-    },
-    rateLimitRule: {
-      tips: '定义网关限流规则，不符合规则的请求将被拦截，拦截记录可以通过限流日志查看',
-      requestUri: '请求URI',
-      requestMethod: '请求方法',
-      limitFrom: '限制时间起',
-      allTheTime: '所有时间',
-      limitTo: '限制时间止',
-      count: '请求次数',
-      period: '时间周期（秒）',
-      createTime: '创建时间',
-      nst: '不支持通配符',
-      status: '规则状态',
-      timeLimit: '时间限制',
-      timeRange: '时间范围'
-    },
-    rateLimitLog: {
-      tips: '展示被限流规则拦截的请求日志',
-      requestUri: '请求URI',
-      requestMethod: '请求方法',
-      createTime: '请求时间',
-      ip: '请求IP',
-      location: '请求地址'
-    },
-    blackList: {
-      tips: '定义网关请求黑名单',
-      requestUri: '请求URI',
-      requestMethod: '请求方法',
-      createTime: '创建时间',
-      ip: '请求IP',
-      location: '请求地址',
-      allIp: '所有IP',
-      limitFrom: '限制时间起',
-      allTheTime: '所有时间',
-      limitTo: '限制时间止',
-      status: '规则状态',
-      st: '支持通配符',
-      timeLimit: '时间限制',
-      timeRange: '时间范围'
-    },
-    blockLog: {
-      tips: '展示被限流规则拦截的请求日志',
-      requestUri: '请求URI',
-      requestMethod: '请求方法',
-      createTime: '请求时间',
-      ip: '请求IP',
-      location: '请求地址'
-    },
-    routeLogin: {
-      needLogin: '网关管理模块操作需要认证，',
-      toLogin: '点击认证',
-      tips: '该模块功能需要预先开启网关增强，开启方法请参考文档：',
-      title: 'FEBS 网关管理认证',
-      login: '认证'
-    },
     refresh: '刷新',
     operation: '操作',
     search: '搜索',
@@ -213,7 +142,7 @@ export default {
     sidebarLogo: '侧边栏 Logo'
   },
   system: {
-    title: 'FEBS 权限系统'
+    title: '信息资产系统'
   },
   tips: {
     usernameShouldNotBeEmpty: '用户名不能为空',
@@ -238,7 +167,7 @@ export default {
     onlyChooseOne: '只能选择一个节点作为父节点',
     noNodeSelected: '请先选择节点',
     confirmDeleteNode: '选中节点及其子结点将被永久删除, 是否继续？',
-    iframeGrant: '用户名：FEBS 密码：123456',
+    iframeGrant: '用户名：IAMS  密码：123456',
     notEqual: '两次输入不一致',
     oldPasswordIncorrect: '原密码不正确',
     uploadSuccess: '上传成功',
@@ -250,9 +179,8 @@ export default {
     confirmRestPassword: '确定重置所选用户密码？',
     resetPasswordSuccess: '所选用户密码重置已被重置为1234qwer',
     getCodeImageFailed: '获取图形验证码失败',
-    tooManyRequest: '获取验证码过于频繁，请稍后再试',
-    clientOriginSecret: '该客户端原始密码为：',
-    sameRule: '已存在相同的规则'
+    tooManyRequest: '获取验证码过于频繁，请1分钟后再试',
+    clientOriginSecret: '该客户端原始密码为：'
   },
   rules: {
     require: '不能为空',
@@ -275,16 +203,16 @@ export default {
     invalidURL: '不是有效的URL'
   },
   common: {
-    system: '分布式微服务权限系统',
+    system: '建信金科信息资产系统',
     desc: {
-      a: '基于Spring Boot 2.2.0 & Spring Cloud Hoxton.RELEASE',
-      b: '使用Spring Cloud OAuth2统一认证',
-      c: '认证服务器资源服务器分离，方便拓展',
-      d: '前后端分离架构，提高软件开发效率',
-      e: '集成多种监控，为微服务保驾护航',
-      f: '提供详细的文档，手把手教你从零搭建到部署',
-      g: 'Kubernetes搭建高可用微服务集群',
-      h: '整合RocketMQ、TX-LCN、Seata分布式事务控制'
+      // a: '基于Spring Boot 2.2.0 & Spring Cloud Hoxton.RELEASE',
+      // b: '使用Spring Cloud OAuth2统一认证',
+      // c: '认证服务器资源服务器分离，方便拓展',
+      // d: '前后端分离架构，提高软件开发效率',
+      // e: '集成多种监控，为微服务保驾护航',
+      // f: '提供详细的文档，手把手教你从零搭建到部署',
+      // g: 'Kubernetes搭建高可用微服务集群',
+      // h: '整合RocketMQ、TX-LCN、Seata分布式事务控制'
     },
     view: '查看',
     tips: '提示',
@@ -295,8 +223,6 @@ export default {
     edit: '修改',
     yes: '是',
     no: '否',
-    open: '开启',
-    close: '关闭',
     sex: {
       male: '男性',
       female: '女性',

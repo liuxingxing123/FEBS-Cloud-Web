@@ -5,7 +5,6 @@ export default {
   state: {
     accessToken: db.get('ACCESS_TOKEN'),
     refreshToken: db.get('REFRESH_TOKEN'),
-    routeToken: db.get('ROUTE_TOKEN', null),
     expireTime: db.get('EXPIRE_TIME', 0),
     user: db.get('USER'),
     permissions: db.get('PERMISSIONS'),
@@ -35,10 +34,6 @@ export default {
     setRoutes(state, val) {
       db.save('USER_ROUTER', val)
       state.routes = val
-    },
-    setRouteToken(state, val) {
-      db.save('ROUTE_TOKEN', val)
-      state.routeToken = val
     }
   }
 }
